@@ -33,8 +33,9 @@
     <h3>This is your project's main page</h3>
     <p>Today's date: 
     
-    <?php 
-      	echo call_user_func("dat" . rand(0,10) ,"m/d/Y");
+    <?php
+        zend_monitor_set_aggregation_hint(microtime());
+        echo "The current date is:" . dat("m/d/Y");    
     ?>
     
     <div id="more-information">
