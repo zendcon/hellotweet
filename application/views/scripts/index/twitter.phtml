@@ -4,7 +4,7 @@ $i = 0;
 foreach ($this->results["results"] as $key => $value) {
 	echo "<div id='trio-text'>";
 	echo "<img class='trio-icon' src=" . $value['profile_image_url'] . "></img>";
-	echo $value["text"];
+	echo ' ' . $value["text"];
 	echo '</div>';
 	echo '<hr>';
 	if ($i++ == 5) {
