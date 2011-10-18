@@ -3,8 +3,10 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
 <link rel="stylesheet" type="text/css"
-    href="http://static.phpcloud.com/styles/blueprint/screen.css"
+	href="http://static.phpcloud.com/styles/blueprint/screen.css"
 	type="text/css" media="screen, projection">
 <link rel="stylesheet" type="text/css"
 	href="http://static.phpcloud.com/styles/blueprint/print.css"
@@ -35,11 +37,27 @@
 <link
 	href="http://static.phpcloud.com/scripts/fancybox/jquery.fancybox-1.3.4.css"
 	media="screen" rel="stylesheet" type="text/css" />
+<style>
+.trio-text {
+	font-size: 28px;
+	color: #EFEFFF;
+	font-weight: bold;
+	font-family: trebucet;
+	padding-left: 100px;
+}
+
+.trio-icon {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+</style>
+
 </head>
 
 <body>
 	<div id="header_wrapper">
-		<div id="global_header" style="width:450px;margin:0 auto;">
+		<div id="global_header" style="width: 450px; margin: 0 auto;">
 			<div id="logo" style="margin-top: 10px;">
 				<a href="/"> <img
 					src="http://static.phpcloud.com/images/phpcloud-logo-transparency-with-TM.png" />
@@ -62,33 +80,18 @@
 	</script>
 
 
-	<br/>
-	
+	<br />
+
 	<div class="trio-text" id="tweets"></div>
 
-	<style>
-	.trio-text {
-		font-size: 28px;
-		color: #EFEFFF;
-		font-weight: bold;
-		font-family: trebucet;
-		padding-left: 100px;
-	}
-	.trio-icon{
-		float:left;
-		width:50px;
-		height:50px;	
-	}
-</style>
-	<center>
-		<div style="font-size: x-large; ">Tweets for #zendcon at 
-			<?php 
-				echo dat("Y/d/m") ;
-			?>
-		</div>
-	</center>
-	
-	
+
+	<div style="font-size: x-large;">Tweets for #zendcon at 
+		<?php
+		echo dat ( "Y/d/m" );
+		?>
+	</div>
+
+
 
 
 </body>
